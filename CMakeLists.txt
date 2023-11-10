@@ -16,6 +16,8 @@ function(add_module)
 
     target_compile_definitions(${TARGET} PUBLIC -DTEST)
 
+    target_compile_options(${TARGET} PUBLIC -fPIC)
+
     target_include_directories(${TARGET}
         PUBLIC
             ${CMAKE_CURRENT_SOURCE_DIR}
